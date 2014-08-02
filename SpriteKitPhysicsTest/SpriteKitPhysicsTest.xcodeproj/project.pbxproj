@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CBA60EC191AA11A0025C2D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60EB191AA11A0025C2D1 /* Foundation.framework */; };
+		9CBA60EE191AA11A0025C2D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60ED191AA11A0025C2D1 /* CoreGraphics.framework */; };
+		9CBA60F0191AA11A0025C2D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60EF191AA11A0025C2D1 /* UIKit.framework */; };
+		9CBA60F2191AA11A0025C2D1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60F1191AA11A0025C2D1 /* SpriteKit.framework */; };
+		9CBA60F8191AA11A0025C2D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA60F6191AA11A0025C2D1 /* InfoPlist.strings */; };
+		9CBA60FA191AA11A0025C2D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA60F9191AA11A0025C2D1 /* main.m */; };
+		9CBA60FE191AA11A0025C2D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA60FD191AA11A0025C2D1 /* AppDelegate.m */; };
+		9CBA6101191AA11A0025C2D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA60FF191AA11A0025C2D1 /* Main.storyboard */; };
+		9CBA6104191AA11A0025C2D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA6103191AA11A0025C2D1 /* ViewController.m */; };
+		9CBA6107191AA11A0025C2D1 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA6106191AA11A0025C2D1 /* MyScene.m */; };
+		9CBA6109191AA11A0025C2D1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA6108191AA11A0025C2D1 /* Spaceship.png */; };
+		9CBA610B191AA11A0025C2D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA610A191AA11A0025C2D1 /* Images.xcassets */; };
+		9CBA6112191AA11A0025C2D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA6111191AA11A0025C2D1 /* XCTest.framework */; };
+		9CBA6113191AA11A0025C2D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60EB191AA11A0025C2D1 /* Foundation.framework */; };
+		9CBA6114191AA11A0025C2D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA60EF191AA11A0025C2D1 /* UIKit.framework */; };
+		9CBA611C191AA11A0025C2D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA611A191AA11A0025C2D1 /* InfoPlist.strings */; };
+		9CBA611E191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA611D191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.m */; };
+		9CBA612D191AA3D20025C2D1 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA6128191AA3D20025C2D1 /* circle.png */; };
+		9CBA612E191AA3D20025C2D1 /* octagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA6129191AA3D20025C2D1 /* octagon.png */; };
+		9CBA612F191AA3D20025C2D1 /* sand.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA612A191AA3D20025C2D1 /* sand.png */; };
+		9CBA6130191AA3D20025C2D1 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA612B191AA3D20025C2D1 /* square.png */; };
+		9CBA6131191AA3D20025C2D1 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA612C191AA3D20025C2D1 /* triangle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CBA6115191AA11A0025C2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBA60E0191AA11A0025C2D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CBA60E7191AA11A0025C2D1;
+			remoteInfo = SpriteKitPhysicsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CBA60E8191AA11A0025C2D1 /* SpriteKitPhysicsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitPhysicsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBA60EB191AA11A0025C2D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CBA60ED191AA11A0025C2D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CBA60EF191AA11A0025C2D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CBA60F1191AA11A0025C2D1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9CBA60F5191AA11A0025C2D1 /* SpriteKitPhysicsTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitPhysicsTest-Info.plist"; sourceTree = "<group>"; };
+		9CBA60F7191AA11A0025C2D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CBA60F9191AA11A0025C2D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CBA60FB191AA11A0025C2D1 /* SpriteKitPhysicsTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKitPhysicsTest-Prefix.pch"; sourceTree = "<group>"; };
+		9CBA60FC191AA11A0025C2D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CBA60FD191AA11A0025C2D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CBA6100191AA11A0025C2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CBA6102191AA11A0025C2D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9CBA6103191AA11A0025C2D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9CBA6105191AA11A0025C2D1 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		9CBA6106191AA11A0025C2D1 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		9CBA6108191AA11A0025C2D1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		9CBA610A191AA11A0025C2D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CBA6110191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitPhysicsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBA6111191AA11A0025C2D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9CBA6119191AA11A0025C2D1 /* SpriteKitPhysicsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitPhysicsTestTests-Info.plist"; sourceTree = "<group>"; };
+		9CBA611B191AA11A0025C2D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CBA611D191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitPhysicsTestTests.m; sourceTree = "<group>"; };
+		9CBA6128191AA3D20025C2D1 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		9CBA6129191AA3D20025C2D1 /* octagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon.png; sourceTree = "<group>"; };
+		9CBA612A191AA3D20025C2D1 /* sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand.png; sourceTree = "<group>"; };
+		9CBA612B191AA3D20025C2D1 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		9CBA612C191AA3D20025C2D1 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CBA60E5191AA11A0025C2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA60EE191AA11A0025C2D1 /* CoreGraphics.framework in Frameworks */,
+				9CBA60F0191AA11A0025C2D1 /* UIKit.framework in Frameworks */,
+				9CBA60F2191AA11A0025C2D1 /* SpriteKit.framework in Frameworks */,
+				9CBA60EC191AA11A0025C2D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CBA610D191AA11A0025C2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA6112191AA11A0025C2D1 /* XCTest.framework in Frameworks */,
+				9CBA6114191AA11A0025C2D1 /* UIKit.framework in Frameworks */,
+				9CBA6113191AA11A0025C2D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CBA60DF191AA11A0025C2D1 = {
+			isa = PBXGroup;
+			children = (
+				9CBA60F3191AA11A0025C2D1 /* SpriteKitPhysicsTest */,
+				9CBA6117191AA11A0025C2D1 /* SpriteKitPhysicsTestTests */,
+				9CBA60EA191AA11A0025C2D1 /* Frameworks */,
+				9CBA60E9191AA11A0025C2D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CBA60E9191AA11A0025C2D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA60E8191AA11A0025C2D1 /* SpriteKitPhysicsTest.app */,
+				9CBA6110191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CBA60EA191AA11A0025C2D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA60EB191AA11A0025C2D1 /* Foundation.framework */,
+				9CBA60ED191AA11A0025C2D1 /* CoreGraphics.framework */,
+				9CBA60EF191AA11A0025C2D1 /* UIKit.framework */,
+				9CBA60F1191AA11A0025C2D1 /* SpriteKit.framework */,
+				9CBA6111191AA11A0025C2D1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CBA60F3191AA11A0025C2D1 /* SpriteKitPhysicsTest */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA6127191AA3D20025C2D1 /* Shapes */,
+				9CBA60FC191AA11A0025C2D1 /* AppDelegate.h */,
+				9CBA60FD191AA11A0025C2D1 /* AppDelegate.m */,
+				9CBA60FF191AA11A0025C2D1 /* Main.storyboard */,
+				9CBA6102191AA11A0025C2D1 /* ViewController.h */,
+				9CBA6103191AA11A0025C2D1 /* ViewController.m */,
+				9CBA6105191AA11A0025C2D1 /* MyScene.h */,
+				9CBA6106191AA11A0025C2D1 /* MyScene.m */,
+				9CBA6108191AA11A0025C2D1 /* Spaceship.png */,
+				9CBA610A191AA11A0025C2D1 /* Images.xcassets */,
+				9CBA60F4191AA11A0025C2D1 /* Supporting Files */,
+			);
+			path = SpriteKitPhysicsTest;
+			sourceTree = "<group>";
+		};
+		9CBA60F4191AA11A0025C2D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA60F5191AA11A0025C2D1 /* SpriteKitPhysicsTest-Info.plist */,
+				9CBA60F6191AA11A0025C2D1 /* InfoPlist.strings */,
+				9CBA60F9191AA11A0025C2D1 /* main.m */,
+				9CBA60FB191AA11A0025C2D1 /* SpriteKitPhysicsTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CBA6117191AA11A0025C2D1 /* SpriteKitPhysicsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA611D191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.m */,
+				9CBA6118191AA11A0025C2D1 /* Supporting Files */,
+			);
+			path = SpriteKitPhysicsTestTests;
+			sourceTree = "<group>";
+		};
+		9CBA6118191AA11A0025C2D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA6119191AA11A0025C2D1 /* SpriteKitPhysicsTestTests-Info.plist */,
+				9CBA611A191AA11A0025C2D1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CBA6127191AA3D20025C2D1 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA6128191AA3D20025C2D1 /* circle.png */,
+				9CBA6129191AA3D20025C2D1 /* octagon.png */,
+				9CBA612A191AA3D20025C2D1 /* sand.png */,
+				9CBA612B191AA3D20025C2D1 /* square.png */,
+				9CBA612C191AA3D20025C2D1 /* triangle.png */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CBA60E7191AA11A0025C2D1 /* SpriteKitPhysicsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CBA6121191AA11A0025C2D1 /* Build configuration list for PBXNativeTarget "SpriteKitPhysicsTest" */;
+			buildPhases = (
+				9CBA60E4191AA11A0025C2D1 /* Sources */,
+				9CBA60E5191AA11A0025C2D1 /* Frameworks */,
+				9CBA60E6191AA11A0025C2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitPhysicsTest;
+			productName = SpriteKitPhysicsTest;
+			productReference = 9CBA60E8191AA11A0025C2D1 /* SpriteKitPhysicsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CBA610F191AA11A0025C2D1 /* SpriteKitPhysicsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CBA6124191AA11A0025C2D1 /* Build configuration list for PBXNativeTarget "SpriteKitPhysicsTestTests" */;
+			buildPhases = (
+				9CBA610C191AA11A0025C2D1 /* Sources */,
+				9CBA610D191AA11A0025C2D1 /* Frameworks */,
+				9CBA610E191AA11A0025C2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CBA6116191AA11A0025C2D1 /* PBXTargetDependency */,
+			);
+			name = SpriteKitPhysicsTestTests;
+			productName = SpriteKitPhysicsTestTests;
+			productReference = 9CBA6110191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CBA60E0191AA11A0025C2D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marcelo de Aguiar Machado Júnior";
+				TargetAttributes = {
+					9CBA610F191AA11A0025C2D1 = {
+						TestTargetID = 9CBA60E7191AA11A0025C2D1;
+					};
+				};
+			};
+			buildConfigurationList = 9CBA60E3191AA11A0025C2D1 /* Build configuration list for PBXProject "SpriteKitPhysicsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CBA60DF191AA11A0025C2D1;
+			productRefGroup = 9CBA60E9191AA11A0025C2D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CBA60E7191AA11A0025C2D1 /* SpriteKitPhysicsTest */,
+				9CBA610F191AA11A0025C2D1 /* SpriteKitPhysicsTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CBA60E6191AA11A0025C2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA60F8191AA11A0025C2D1 /* InfoPlist.strings in Resources */,
+				9CBA610B191AA11A0025C2D1 /* Images.xcassets in Resources */,
+				9CBA612F191AA3D20025C2D1 /* sand.png in Resources */,
+				9CBA612D191AA3D20025C2D1 /* circle.png in Resources */,
+				9CBA6131191AA3D20025C2D1 /* triangle.png in Resources */,
+				9CBA612E191AA3D20025C2D1 /* octagon.png in Resources */,
+				9CBA6109191AA11A0025C2D1 /* Spaceship.png in Resources */,
+				9CBA6130191AA3D20025C2D1 /* square.png in Resources */,
+				9CBA6101191AA11A0025C2D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CBA610E191AA11A0025C2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA611C191AA11A0025C2D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CBA60E4191AA11A0025C2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA6107191AA11A0025C2D1 /* MyScene.m in Sources */,
+				9CBA6104191AA11A0025C2D1 /* ViewController.m in Sources */,
+				9CBA60FE191AA11A0025C2D1 /* AppDelegate.m in Sources */,
+				9CBA60FA191AA11A0025C2D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CBA610C191AA11A0025C2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBA611E191AA11A0025C2D1 /* SpriteKitPhysicsTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CBA6116191AA11A0025C2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CBA60E7191AA11A0025C2D1 /* SpriteKitPhysicsTest */;
+			targetProxy = 9CBA6115191AA11A0025C2D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CBA60F6191AA11A0025C2D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CBA60F7191AA11A0025C2D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CBA60FF191AA11A0025C2D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CBA6100191AA11A0025C2D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CBA611A191AA11A0025C2D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CBA611B191AA11A0025C2D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CBA611F191AA11A0025C2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CBA6120191AA11A0025C2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CBA6122191AA11A0025C2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CBA6123191AA11A0025C2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9CBA6125191AA11A0025C2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKitPhysicsTest.app/SpriteKitPhysicsTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteKitPhysicsTestTests/SpriteKitPhysicsTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9CBA6126191AA11A0025C2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKitPhysicsTest.app/SpriteKitPhysicsTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitPhysicsTest/SpriteKitPhysicsTest-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitPhysicsTestTests/SpriteKitPhysicsTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CBA60E3191AA11A0025C2D1 /* Build configuration list for PBXProject "SpriteKitPhysicsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBA611F191AA11A0025C2D1 /* Debug */,
+				9CBA6120191AA11A0025C2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CBA6121191AA11A0025C2D1 /* Build configuration list for PBXNativeTarget "SpriteKitPhysicsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBA6122191AA11A0025C2D1 /* Debug */,
+				9CBA6123191AA11A0025C2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CBA6124191AA11A0025C2D1 /* Build configuration list for PBXNativeTarget "SpriteKitPhysicsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBA6125191AA11A0025C2D1 /* Debug */,
+				9CBA6126191AA11A0025C2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CBA60E0191AA11A0025C2D1 /* Project object */;
+}

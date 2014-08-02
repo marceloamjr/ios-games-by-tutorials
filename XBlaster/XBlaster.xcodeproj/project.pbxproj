@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C33A527191532B300FF479B /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A51E191532B300FF479B /* SKAction+SKTExtras.m */; };
+		9C33A528191532B300FF479B /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A520191532B300FF479B /* SKEmitterNode+SKTExtras.m */; };
+		9C33A529191532B300FF479B /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A522191532B300FF479B /* SKNode+SKTExtras.m */; };
+		9C33A52A191532B300FF479B /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A524191532B300FF479B /* SKTAudio.m */; };
+		9C33A52B191532B300FF479B /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A526191532B300FF479B /* SKTUtils.mm */; };
+		9C33A52F1917CAFE00FF479B /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A52E1917CAFE00FF479B /* Entity.m */; };
+		9C33A5321917DA1100FF479B /* PlayerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A5311917DA1100FF479B /* PlayerShip.m */; };
+		9C33A53519180D4100FF479B /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A53419180D4100FF479B /* Bullet.m */; };
+		9C33A538191814DF00FF479B /* EnemyA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A537191814DF00FF479B /* EnemyA.m */; };
+		9C33A53B191814EE00FF479B /* EnemyB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A53A191814EE00FF479B /* EnemyB.m */; };
+		9C33A53E1918164800FF479B /* AISteering.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C33A53D1918164800FF479B /* AISteering.m */; };
+		9CD50670191177630018CB23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD5066F191177630018CB23 /* Foundation.framework */; };
+		9CD50672191177630018CB23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD50671191177630018CB23 /* CoreGraphics.framework */; };
+		9CD50674191177630018CB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD50673191177630018CB23 /* UIKit.framework */; };
+		9CD50676191177630018CB23 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD50675191177630018CB23 /* SpriteKit.framework */; };
+		9CD5067C191177630018CB23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5067A191177630018CB23 /* InfoPlist.strings */; };
+		9CD5067E191177630018CB23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5067D191177630018CB23 /* main.m */; };
+		9CD50682191177630018CB23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD50681191177630018CB23 /* AppDelegate.m */; };
+		9CD50685191177630018CB23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD50683191177630018CB23 /* Main.storyboard */; };
+		9CD50688191177630018CB23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD50687191177630018CB23 /* ViewController.m */; };
+		9CD5068B191177630018CB23 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5068A191177630018CB23 /* MyScene.m */; };
+		9CD5068D191177630018CB23 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5068C191177630018CB23 /* Spaceship.png */; };
+		9CD5068F191177630018CB23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5068E191177630018CB23 /* Images.xcassets */; };
+		9CD50696191177630018CB23 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD50695191177630018CB23 /* XCTest.framework */; };
+		9CD50697191177630018CB23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD5066F191177630018CB23 /* Foundation.framework */; };
+		9CD50698191177630018CB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD50673191177630018CB23 /* UIKit.framework */; };
+		9CD506A0191177630018CB23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5069E191177630018CB23 /* InfoPlist.strings */; };
+		9CD506A2191177630018CB23 /* XBlasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD506A1191177630018CB23 /* XBlasterTests.m */; };
+		9CD506AD1911799D0018CB23 /* thirteen_pixel_fonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CD506AC1911799D0018CB23 /* thirteen_pixel_fonts.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CD50699191177630018CB23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CD50664191177630018CB23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CD5066B191177630018CB23;
+			remoteInfo = XBlaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C33A51D191532B300FF479B /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		9C33A51E191532B300FF479B /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		9C33A51F191532B300FF479B /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		9C33A520191532B300FF479B /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		9C33A521191532B300FF479B /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		9C33A522191532B300FF479B /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		9C33A523191532B300FF479B /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		9C33A524191532B300FF479B /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		9C33A525191532B300FF479B /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		9C33A526191532B300FF479B /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+		9C33A52D1917CAFE00FF479B /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		9C33A52E1917CAFE00FF479B /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		9C33A5301917DA1100FF479B /* PlayerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerShip.h; sourceTree = "<group>"; };
+		9C33A5311917DA1100FF479B /* PlayerShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerShip.m; sourceTree = "<group>"; };
+		9C33A53319180D4100FF479B /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		9C33A53419180D4100FF479B /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		9C33A536191814DF00FF479B /* EnemyA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyA.h; sourceTree = "<group>"; };
+		9C33A537191814DF00FF479B /* EnemyA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyA.m; sourceTree = "<group>"; };
+		9C33A539191814EE00FF479B /* EnemyB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyB.h; sourceTree = "<group>"; };
+		9C33A53A191814EE00FF479B /* EnemyB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyB.m; sourceTree = "<group>"; };
+		9C33A53C1918164800FF479B /* AISteering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISteering.h; sourceTree = "<group>"; };
+		9C33A53D1918164800FF479B /* AISteering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISteering.m; sourceTree = "<group>"; };
+		9CD5066C191177630018CB23 /* XBlaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBlaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD5066F191177630018CB23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CD50671191177630018CB23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CD50673191177630018CB23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CD50675191177630018CB23 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9CD50679191177630018CB23 /* XBlaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XBlaster-Info.plist"; sourceTree = "<group>"; };
+		9CD5067B191177630018CB23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CD5067D191177630018CB23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CD5067F191177630018CB23 /* XBlaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBlaster-Prefix.pch"; sourceTree = "<group>"; };
+		9CD50680191177630018CB23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CD50681191177630018CB23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CD50684191177630018CB23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CD50686191177630018CB23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9CD50687191177630018CB23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9CD50689191177630018CB23 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		9CD5068A191177630018CB23 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		9CD5068C191177630018CB23 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		9CD5068E191177630018CB23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CD50694191177630018CB23 /* XBlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBlasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD50695191177630018CB23 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9CD5069D191177630018CB23 /* XBlasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XBlasterTests-Info.plist"; sourceTree = "<group>"; };
+		9CD5069F191177630018CB23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CD506A1191177630018CB23 /* XBlasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBlasterTests.m; sourceTree = "<group>"; };
+		9CD506AC1911799D0018CB23 /* thirteen_pixel_fonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = thirteen_pixel_fonts.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CD50669191177630018CB23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD50672191177630018CB23 /* CoreGraphics.framework in Frameworks */,
+				9CD50674191177630018CB23 /* UIKit.framework in Frameworks */,
+				9CD50676191177630018CB23 /* SpriteKit.framework in Frameworks */,
+				9CD50670191177630018CB23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD50691191177630018CB23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD50696191177630018CB23 /* XCTest.framework in Frameworks */,
+				9CD50698191177630018CB23 /* UIKit.framework in Frameworks */,
+				9CD50697191177630018CB23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C33A51C191532B300FF479B /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9C33A51D191532B300FF479B /* SKAction+SKTExtras.h */,
+				9C33A51E191532B300FF479B /* SKAction+SKTExtras.m */,
+				9C33A51F191532B300FF479B /* SKEmitterNode+SKTExtras.h */,
+				9C33A520191532B300FF479B /* SKEmitterNode+SKTExtras.m */,
+				9C33A521191532B300FF479B /* SKNode+SKTExtras.h */,
+				9C33A522191532B300FF479B /* SKNode+SKTExtras.m */,
+				9C33A523191532B300FF479B /* SKTAudio.h */,
+				9C33A524191532B300FF479B /* SKTAudio.m */,
+				9C33A525191532B300FF479B /* SKTUtils.h */,
+				9C33A526191532B300FF479B /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		9C33A52C1917CA7700FF479B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9C33A52D1917CAFE00FF479B /* Entity.h */,
+				9C33A52E1917CAFE00FF479B /* Entity.m */,
+				9C33A5301917DA1100FF479B /* PlayerShip.h */,
+				9C33A5311917DA1100FF479B /* PlayerShip.m */,
+				9C33A53319180D4100FF479B /* Bullet.h */,
+				9C33A53419180D4100FF479B /* Bullet.m */,
+				9C33A536191814DF00FF479B /* EnemyA.h */,
+				9C33A537191814DF00FF479B /* EnemyA.m */,
+				9C33A539191814EE00FF479B /* EnemyB.h */,
+				9C33A53A191814EE00FF479B /* EnemyB.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		9CD50663191177630018CB23 = {
+			isa = PBXGroup;
+			children = (
+				9CD50677191177630018CB23 /* XBlaster */,
+				9CD5069B191177630018CB23 /* XBlasterTests */,
+				9CD5066E191177630018CB23 /* Frameworks */,
+				9CD5066D191177630018CB23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CD5066D191177630018CB23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD5066C191177630018CB23 /* XBlaster.app */,
+				9CD50694191177630018CB23 /* XBlasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CD5066E191177630018CB23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CD5066F191177630018CB23 /* Foundation.framework */,
+				9CD50671191177630018CB23 /* CoreGraphics.framework */,
+				9CD50673191177630018CB23 /* UIKit.framework */,
+				9CD50675191177630018CB23 /* SpriteKit.framework */,
+				9CD50695191177630018CB23 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CD50677191177630018CB23 /* XBlaster */ = {
+			isa = PBXGroup;
+			children = (
+				9C33A52C1917CA7700FF479B /* Entities */,
+				9C33A51C191532B300FF479B /* SKTUtils */,
+				9CD506AB191179460018CB23 /* Fonts */,
+				9CD50680191177630018CB23 /* AppDelegate.h */,
+				9CD50681191177630018CB23 /* AppDelegate.m */,
+				9CD50683191177630018CB23 /* Main.storyboard */,
+				9CD50686191177630018CB23 /* ViewController.h */,
+				9CD50687191177630018CB23 /* ViewController.m */,
+				9CD50689191177630018CB23 /* MyScene.h */,
+				9CD5068A191177630018CB23 /* MyScene.m */,
+				9CD5068C191177630018CB23 /* Spaceship.png */,
+				9CD5068E191177630018CB23 /* Images.xcassets */,
+				9CD50678191177630018CB23 /* Supporting Files */,
+				9C33A53C1918164800FF479B /* AISteering.h */,
+				9C33A53D1918164800FF479B /* AISteering.m */,
+			);
+			path = XBlaster;
+			sourceTree = "<group>";
+		};
+		9CD50678191177630018CB23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD50679191177630018CB23 /* XBlaster-Info.plist */,
+				9CD5067A191177630018CB23 /* InfoPlist.strings */,
+				9CD5067D191177630018CB23 /* main.m */,
+				9CD5067F191177630018CB23 /* XBlaster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CD5069B191177630018CB23 /* XBlasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CD506A1191177630018CB23 /* XBlasterTests.m */,
+				9CD5069C191177630018CB23 /* Supporting Files */,
+			);
+			path = XBlasterTests;
+			sourceTree = "<group>";
+		};
+		9CD5069C191177630018CB23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD5069D191177630018CB23 /* XBlasterTests-Info.plist */,
+				9CD5069E191177630018CB23 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CD506AB191179460018CB23 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9CD506AC1911799D0018CB23 /* thirteen_pixel_fonts.ttf */,
+			);
+			name = Fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CD5066B191177630018CB23 /* XBlaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD506A5191177630018CB23 /* Build configuration list for PBXNativeTarget "XBlaster" */;
+			buildPhases = (
+				9CD50668191177630018CB23 /* Sources */,
+				9CD50669191177630018CB23 /* Frameworks */,
+				9CD5066A191177630018CB23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBlaster;
+			productName = XBlaster;
+			productReference = 9CD5066C191177630018CB23 /* XBlaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CD50693191177630018CB23 /* XBlasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD506A8191177630018CB23 /* Build configuration list for PBXNativeTarget "XBlasterTests" */;
+			buildPhases = (
+				9CD50690191177630018CB23 /* Sources */,
+				9CD50691191177630018CB23 /* Frameworks */,
+				9CD50692191177630018CB23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CD5069A191177630018CB23 /* PBXTargetDependency */,
+			);
+			name = XBlasterTests;
+			productName = XBlasterTests;
+			productReference = 9CD50694191177630018CB23 /* XBlasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CD50664191177630018CB23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marcelo de Aguiar Machado Júnior";
+				TargetAttributes = {
+					9CD50693191177630018CB23 = {
+						TestTargetID = 9CD5066B191177630018CB23;
+					};
+				};
+			};
+			buildConfigurationList = 9CD50667191177630018CB23 /* Build configuration list for PBXProject "XBlaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CD50663191177630018CB23;
+			productRefGroup = 9CD5066D191177630018CB23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CD5066B191177630018CB23 /* XBlaster */,
+				9CD50693191177630018CB23 /* XBlasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CD5066A191177630018CB23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD506AD1911799D0018CB23 /* thirteen_pixel_fonts.ttf in Resources */,
+				9CD5067C191177630018CB23 /* InfoPlist.strings in Resources */,
+				9CD5068F191177630018CB23 /* Images.xcassets in Resources */,
+				9CD5068D191177630018CB23 /* Spaceship.png in Resources */,
+				9CD50685191177630018CB23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD50692191177630018CB23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD506A0191177630018CB23 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CD50668191177630018CB23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C33A52F1917CAFE00FF479B /* Entity.m in Sources */,
+				9CD5068B191177630018CB23 /* MyScene.m in Sources */,
+				9C33A52A191532B300FF479B /* SKTAudio.m in Sources */,
+				9CD50688191177630018CB23 /* ViewController.m in Sources */,
+				9C33A53E1918164800FF479B /* AISteering.m in Sources */,
+				9C33A5321917DA1100FF479B /* PlayerShip.m in Sources */,
+				9C33A53B191814EE00FF479B /* EnemyB.m in Sources */,
+				9C33A528191532B300FF479B /* SKEmitterNode+SKTExtras.m in Sources */,
+				9C33A52B191532B300FF479B /* SKTUtils.mm in Sources */,
+				9C33A538191814DF00FF479B /* EnemyA.m in Sources */,
+				9C33A527191532B300FF479B /* SKAction+SKTExtras.m in Sources */,
+				9CD50682191177630018CB23 /* AppDelegate.m in Sources */,
+				9C33A529191532B300FF479B /* SKNode+SKTExtras.m in Sources */,
+				9CD5067E191177630018CB23 /* main.m in Sources */,
+				9C33A53519180D4100FF479B /* Bullet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD50690191177630018CB23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD506A2191177630018CB23 /* XBlasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CD5069A191177630018CB23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CD5066B191177630018CB23 /* XBlaster */;
+			targetProxy = 9CD50699191177630018CB23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CD5067A191177630018CB23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD5067B191177630018CB23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CD50683191177630018CB23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD50684191177630018CB23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CD5069E191177630018CB23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD5069F191177630018CB23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CD506A3191177630018CB23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CD506A4191177630018CB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CD506A6191177630018CB23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBlaster/XBlaster-Prefix.pch";
+				INFOPLIST_FILE = "XBlaster/XBlaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CD506A7191177630018CB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBlaster/XBlaster-Prefix.pch";
+				INFOPLIST_FILE = "XBlaster/XBlaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9CD506A9191177630018CB23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XBlaster.app/XBlaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBlaster/XBlaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "XBlasterTests/XBlasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9CD506AA191177630018CB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XBlaster.app/XBlaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBlaster/XBlaster-Prefix.pch";
+				INFOPLIST_FILE = "XBlasterTests/XBlasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CD50667191177630018CB23 /* Build configuration list for PBXProject "XBlaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD506A3191177630018CB23 /* Debug */,
+				9CD506A4191177630018CB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD506A5191177630018CB23 /* Build configuration list for PBXNativeTarget "XBlaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD506A6191177630018CB23 /* Debug */,
+				9CD506A7191177630018CB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD506A8191177630018CB23 /* Build configuration list for PBXNativeTarget "XBlasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD506A9191177630018CB23 /* Debug */,
+				9CD506AA191177630018CB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CD50664191177630018CB23 /* Project object */;
+}

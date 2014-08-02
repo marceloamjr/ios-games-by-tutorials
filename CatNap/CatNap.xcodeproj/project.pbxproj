@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C71B6EA192E405D0026812A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6E9192E405D0026812A /* Foundation.framework */; };
+		9C71B6EC192E405D0026812A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6EB192E405D0026812A /* CoreGraphics.framework */; };
+		9C71B6EE192E405D0026812A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6ED192E405D0026812A /* UIKit.framework */; };
+		9C71B6F0192E405D0026812A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6EF192E405D0026812A /* SpriteKit.framework */; };
+		9C71B6F6192E405D0026812A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B6F4192E405D0026812A /* InfoPlist.strings */; };
+		9C71B6F8192E405D0026812A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B6F7192E405D0026812A /* main.m */; };
+		9C71B6FC192E405D0026812A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B6FB192E405D0026812A /* AppDelegate.m */; };
+		9C71B6FF192E405D0026812A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B6FD192E405D0026812A /* Main.storyboard */; };
+		9C71B702192E405D0026812A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B701192E405D0026812A /* ViewController.m */; };
+		9C71B705192E405D0026812A /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B704192E405D0026812A /* MyScene.m */; };
+		9C71B707192E405E0026812A /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B706192E405E0026812A /* Spaceship.png */; };
+		9C71B709192E405E0026812A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B708192E405E0026812A /* Images.xcassets */; };
+		9C71B710192E405E0026812A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B70F192E405E0026812A /* XCTest.framework */; };
+		9C71B711192E405E0026812A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6E9192E405D0026812A /* Foundation.framework */; };
+		9C71B712192E405E0026812A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71B6ED192E405D0026812A /* UIKit.framework */; };
+		9C71B71A192E405E0026812A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B718192E405E0026812A /* InfoPlist.strings */; };
+		9C71B71C192E405E0026812A /* CatNapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B71B192E405E0026812A /* CatNapTests.m */; };
+		9C71B73F192E42DC0026812A /* background-desat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B727192E42DC0026812A /* background-desat.png */; };
+		9C71B740192E42DC0026812A /* background-desat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B728192E42DC0026812A /* background-desat@2x.png */; };
+		9C71B741192E42DC0026812A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B729192E42DC0026812A /* background.png */; };
+		9C71B742192E42DC0026812A /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B72A192E42DC0026812A /* background@2x.png */; };
+		9C71B743192E42DC0026812A /* perlin.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C71B72C192E42DC0026812A /* perlin.c */; };
+		9C71B744192E42DC0026812A /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B72F192E42DC0026812A /* level1.plist */; };
+		9C71B745192E42DC0026812A /* level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B730192E42DC0026812A /* level2.plist */; };
+		9C71B746192E42DC0026812A /* level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B731192E42DC0026812A /* level3.plist */; };
+		9C71B747192E42DC0026812A /* level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B732192E42DC0026812A /* level4.plist */; };
+		9C71B748192E42DC0026812A /* level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B733192E42DC0026812A /* level5.plist */; };
+		9C71B749192E42DC0026812A /* level6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B734192E42DC0026812A /* level6.plist */; };
+		9C71B74A192E42DC0026812A /* level7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B735192E42DC0026812A /* level7.plist */; };
+		9C71B74B192E42DC0026812A /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B737192E42DC0026812A /* bgMusic.mp3 */; };
+		9C71B74C192E42DC0026812A /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B738192E42DC0026812A /* lose.mp3 */; };
+		9C71B74D192E42DC0026812A /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B739192E42DC0026812A /* pop.mp3 */; };
+		9C71B74E192E42DC0026812A /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B73A192E42DC0026812A /* win.mp3 */; };
+		9C71B74F192E42DC0026812A /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B73B192E42DC0026812A /* sprites.atlas */; };
+		9C71B750192E42DC0026812A /* BookTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B73D192E42DC0026812A /* BookTrailer.m4v */; };
+		9C71B751192E42DC0026812A /* loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9C71B73E192E42DC0026812A /* loop.mov */; };
+		9C996224195DA0D700BFB387 /* OldTVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C996223195DA0D700BFB387 /* OldTVNode.m */; };
+		9CD58A4E19321D95003C792F /* SKSpriteNode+DebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD58A4D19321D95003C792F /* SKSpriteNode+DebugDraw.m */; };
+		9CFC6B781938B75900C7D17F /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC6B6F1938B75900C7D17F /* SKAction+SKTExtras.m */; };
+		9CFC6B791938B75900C7D17F /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC6B711938B75900C7D17F /* SKEmitterNode+SKTExtras.m */; };
+		9CFC6B7A1938B75900C7D17F /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC6B731938B75900C7D17F /* SKNode+SKTExtras.m */; };
+		9CFC6B7B1938B75900C7D17F /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC6B751938B75900C7D17F /* SKTAudio.m */; };
+		9CFC6B7C1938B75900C7D17F /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC6B771938B75900C7D17F /* SKTUtils.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C71B713192E405E0026812A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C71B6DE192E405D0026812A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C71B6E5192E405D0026812A;
+			remoteInfo = CatNap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C71B6E6192E405D0026812A /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C71B6E9192E405D0026812A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C71B6EB192E405D0026812A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C71B6ED192E405D0026812A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C71B6EF192E405D0026812A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9C71B6F3192E405D0026812A /* CatNap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatNap-Info.plist"; sourceTree = "<group>"; };
+		9C71B6F5192E405D0026812A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C71B6F7192E405D0026812A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C71B6F9192E405D0026812A /* CatNap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatNap-Prefix.pch"; sourceTree = "<group>"; };
+		9C71B6FA192E405D0026812A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C71B6FB192E405D0026812A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C71B6FE192E405D0026812A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C71B700192E405D0026812A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C71B701192E405D0026812A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C71B703192E405D0026812A /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		9C71B704192E405D0026812A /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		9C71B706192E405E0026812A /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		9C71B708192E405E0026812A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C71B70E192E405E0026812A /* CatNapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatNapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C71B70F192E405E0026812A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C71B717192E405E0026812A /* CatNapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatNapTests-Info.plist"; sourceTree = "<group>"; };
+		9C71B719192E405E0026812A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C71B71B192E405E0026812A /* CatNapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatNapTests.m; sourceTree = "<group>"; };
+		9C71B727192E42DC0026812A /* background-desat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat.png"; sourceTree = "<group>"; };
+		9C71B728192E42DC0026812A /* background-desat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat@2x.png"; sourceTree = "<group>"; };
+		9C71B729192E42DC0026812A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9C71B72A192E42DC0026812A /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		9C71B72C192E42DC0026812A /* perlin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = perlin.c; sourceTree = "<group>"; };
+		9C71B72D192E42DC0026812A /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin.h; sourceTree = "<group>"; };
+		9C71B72F192E42DC0026812A /* level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level1.plist; sourceTree = "<group>"; };
+		9C71B730192E42DC0026812A /* level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level2.plist; sourceTree = "<group>"; };
+		9C71B731192E42DC0026812A /* level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level3.plist; sourceTree = "<group>"; };
+		9C71B732192E42DC0026812A /* level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level4.plist; sourceTree = "<group>"; };
+		9C71B733192E42DC0026812A /* level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level5.plist; sourceTree = "<group>"; };
+		9C71B734192E42DC0026812A /* level6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level6.plist; sourceTree = "<group>"; };
+		9C71B735192E42DC0026812A /* level7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level7.plist; sourceTree = "<group>"; };
+		9C71B737192E42DC0026812A /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		9C71B738192E42DC0026812A /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		9C71B739192E42DC0026812A /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		9C71B73A192E42DC0026812A /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		9C71B73B192E42DC0026812A /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		9C71B73D192E42DC0026812A /* BookTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = BookTrailer.m4v; sourceTree = "<group>"; };
+		9C71B73E192E42DC0026812A /* loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loop.mov; sourceTree = "<group>"; };
+		9C996222195DA0D700BFB387 /* OldTVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldTVNode.h; sourceTree = "<group>"; };
+		9C996223195DA0D700BFB387 /* OldTVNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldTVNode.m; sourceTree = "<group>"; };
+		9CBB1CBA19603C2E00066DEF /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		9CD58A4C19321D95003C792F /* SKSpriteNode+DebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteNode+DebugDraw.h"; sourceTree = "<group>"; };
+		9CD58A4D19321D95003C792F /* SKSpriteNode+DebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteNode+DebugDraw.m"; sourceTree = "<group>"; };
+		9CFC6B6E1938B75900C7D17F /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		9CFC6B6F1938B75900C7D17F /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		9CFC6B701938B75900C7D17F /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		9CFC6B711938B75900C7D17F /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		9CFC6B721938B75900C7D17F /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		9CFC6B731938B75900C7D17F /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		9CFC6B741938B75900C7D17F /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		9CFC6B751938B75900C7D17F /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		9CFC6B761938B75900C7D17F /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		9CFC6B771938B75900C7D17F /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C71B6E3192E405D0026812A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B6EC192E405D0026812A /* CoreGraphics.framework in Frameworks */,
+				9C71B6EE192E405D0026812A /* UIKit.framework in Frameworks */,
+				9C71B6F0192E405D0026812A /* SpriteKit.framework in Frameworks */,
+				9C71B6EA192E405D0026812A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71B70B192E405E0026812A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B710192E405E0026812A /* XCTest.framework in Frameworks */,
+				9C71B712192E405E0026812A /* UIKit.framework in Frameworks */,
+				9C71B711192E405E0026812A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C71B6DD192E405D0026812A = {
+			isa = PBXGroup;
+			children = (
+				9C71B6F1192E405D0026812A /* CatNap */,
+				9C71B715192E405E0026812A /* CatNapTests */,
+				9C71B6E8192E405D0026812A /* Frameworks */,
+				9C71B6E7192E405D0026812A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C71B6E7192E405D0026812A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B6E6192E405D0026812A /* CatNap.app */,
+				9C71B70E192E405E0026812A /* CatNapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C71B6E8192E405D0026812A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B6E9192E405D0026812A /* Foundation.framework */,
+				9C71B6EB192E405D0026812A /* CoreGraphics.framework */,
+				9C71B6ED192E405D0026812A /* UIKit.framework */,
+				9C71B6EF192E405D0026812A /* SpriteKit.framework */,
+				9C71B70F192E405E0026812A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C71B6F1192E405D0026812A /* CatNap */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC6B6D1938B75900C7D17F /* SKTUtils */,
+				9C71B725192E42DC0026812A /* Art */,
+				9C71B6FA192E405D0026812A /* AppDelegate.h */,
+				9C71B6FB192E405D0026812A /* AppDelegate.m */,
+				9C71B6FD192E405D0026812A /* Main.storyboard */,
+				9C71B700192E405D0026812A /* ViewController.h */,
+				9C71B701192E405D0026812A /* ViewController.m */,
+				9C71B703192E405D0026812A /* MyScene.h */,
+				9C71B704192E405D0026812A /* MyScene.m */,
+				9C71B706192E405E0026812A /* Spaceship.png */,
+				9C71B708192E405E0026812A /* Images.xcassets */,
+				9C71B6F2192E405D0026812A /* Supporting Files */,
+				9CD58A4C19321D95003C792F /* SKSpriteNode+DebugDraw.h */,
+				9CD58A4D19321D95003C792F /* SKSpriteNode+DebugDraw.m */,
+				9C996222195DA0D700BFB387 /* OldTVNode.h */,
+				9C996223195DA0D700BFB387 /* OldTVNode.m */,
+				9CBB1CBA19603C2E00066DEF /* Physics.h */,
+			);
+			path = CatNap;
+			sourceTree = "<group>";
+		};
+		9C71B6F2192E405D0026812A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B6F3192E405D0026812A /* CatNap-Info.plist */,
+				9C71B6F4192E405D0026812A /* InfoPlist.strings */,
+				9C71B6F7192E405D0026812A /* main.m */,
+				9C71B6F9192E405D0026812A /* CatNap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C71B715192E405E0026812A /* CatNapTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B71B192E405E0026812A /* CatNapTests.m */,
+				9C71B716192E405E0026812A /* Supporting Files */,
+			);
+			path = CatNapTests;
+			sourceTree = "<group>";
+		};
+		9C71B716192E405E0026812A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B717192E405E0026812A /* CatNapTests-Info.plist */,
+				9C71B718192E405E0026812A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C71B725192E42DC0026812A /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B726192E42DC0026812A /* Backgrounds */,
+				9C71B72B192E42DC0026812A /* Code */,
+				9C71B72E192E42DC0026812A /* Levels */,
+				9C71B736192E42DC0026812A /* Sounds */,
+				9C71B73B192E42DC0026812A /* sprites.atlas */,
+				9C71B73C192E42DC0026812A /* Videos */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		9C71B726192E42DC0026812A /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B727192E42DC0026812A /* background-desat.png */,
+				9C71B728192E42DC0026812A /* background-desat@2x.png */,
+				9C71B729192E42DC0026812A /* background.png */,
+				9C71B72A192E42DC0026812A /* background@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		9C71B72B192E42DC0026812A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B72C192E42DC0026812A /* perlin.c */,
+				9C71B72D192E42DC0026812A /* perlin.h */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		9C71B72E192E42DC0026812A /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B72F192E42DC0026812A /* level1.plist */,
+				9C71B730192E42DC0026812A /* level2.plist */,
+				9C71B731192E42DC0026812A /* level3.plist */,
+				9C71B732192E42DC0026812A /* level4.plist */,
+				9C71B733192E42DC0026812A /* level5.plist */,
+				9C71B734192E42DC0026812A /* level6.plist */,
+				9C71B735192E42DC0026812A /* level7.plist */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		9C71B736192E42DC0026812A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B737192E42DC0026812A /* bgMusic.mp3 */,
+				9C71B738192E42DC0026812A /* lose.mp3 */,
+				9C71B739192E42DC0026812A /* pop.mp3 */,
+				9C71B73A192E42DC0026812A /* win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9C71B73C192E42DC0026812A /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				9C71B73D192E42DC0026812A /* BookTrailer.m4v */,
+				9C71B73E192E42DC0026812A /* loop.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		9CFC6B6D1938B75900C7D17F /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC6B6E1938B75900C7D17F /* SKAction+SKTExtras.h */,
+				9CFC6B6F1938B75900C7D17F /* SKAction+SKTExtras.m */,
+				9CFC6B701938B75900C7D17F /* SKEmitterNode+SKTExtras.h */,
+				9CFC6B711938B75900C7D17F /* SKEmitterNode+SKTExtras.m */,
+				9CFC6B721938B75900C7D17F /* SKNode+SKTExtras.h */,
+				9CFC6B731938B75900C7D17F /* SKNode+SKTExtras.m */,
+				9CFC6B741938B75900C7D17F /* SKTAudio.h */,
+				9CFC6B751938B75900C7D17F /* SKTAudio.m */,
+				9CFC6B761938B75900C7D17F /* SKTUtils.h */,
+				9CFC6B771938B75900C7D17F /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C71B6E5192E405D0026812A /* CatNap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C71B71F192E405E0026812A /* Build configuration list for PBXNativeTarget "CatNap" */;
+			buildPhases = (
+				9C71B6E2192E405D0026812A /* Sources */,
+				9C71B6E3192E405D0026812A /* Frameworks */,
+				9C71B6E4192E405D0026812A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatNap;
+			productName = CatNap;
+			productReference = 9C71B6E6192E405D0026812A /* CatNap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C71B70D192E405E0026812A /* CatNapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C71B722192E405E0026812A /* Build configuration list for PBXNativeTarget "CatNapTests" */;
+			buildPhases = (
+				9C71B70A192E405E0026812A /* Sources */,
+				9C71B70B192E405E0026812A /* Frameworks */,
+				9C71B70C192E405E0026812A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C71B714192E405E0026812A /* PBXTargetDependency */,
+			);
+			name = CatNapTests;
+			productName = CatNapTests;
+			productReference = 9C71B70E192E405E0026812A /* CatNapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C71B6DE192E405D0026812A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marcelo de Aguiar Machado Júnior";
+				TargetAttributes = {
+					9C71B70D192E405E0026812A = {
+						TestTargetID = 9C71B6E5192E405D0026812A;
+					};
+				};
+			};
+			buildConfigurationList = 9C71B6E1192E405D0026812A /* Build configuration list for PBXProject "CatNap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C71B6DD192E405D0026812A;
+			productRefGroup = 9C71B6E7192E405D0026812A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C71B6E5192E405D0026812A /* CatNap */,
+				9C71B70D192E405E0026812A /* CatNapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C71B6E4192E405D0026812A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B6F6192E405D0026812A /* InfoPlist.strings in Resources */,
+				9C71B73F192E42DC0026812A /* background-desat.png in Resources */,
+				9C71B750192E42DC0026812A /* BookTrailer.m4v in Resources */,
+				9C71B745192E42DC0026812A /* level2.plist in Resources */,
+				9C71B74B192E42DC0026812A /* bgMusic.mp3 in Resources */,
+				9C71B741192E42DC0026812A /* background.png in Resources */,
+				9C71B744192E42DC0026812A /* level1.plist in Resources */,
+				9C71B740192E42DC0026812A /* background-desat@2x.png in Resources */,
+				9C71B747192E42DC0026812A /* level4.plist in Resources */,
+				9C71B746192E42DC0026812A /* level3.plist in Resources */,
+				9C71B749192E42DC0026812A /* level6.plist in Resources */,
+				9C71B74F192E42DC0026812A /* sprites.atlas in Resources */,
+				9C71B709192E405E0026812A /* Images.xcassets in Resources */,
+				9C71B707192E405E0026812A /* Spaceship.png in Resources */,
+				9C71B74D192E42DC0026812A /* pop.mp3 in Resources */,
+				9C71B74E192E42DC0026812A /* win.mp3 in Resources */,
+				9C71B742192E42DC0026812A /* background@2x.png in Resources */,
+				9C71B74A192E42DC0026812A /* level7.plist in Resources */,
+				9C71B751192E42DC0026812A /* loop.mov in Resources */,
+				9C71B748192E42DC0026812A /* level5.plist in Resources */,
+				9C71B6FF192E405D0026812A /* Main.storyboard in Resources */,
+				9C71B74C192E42DC0026812A /* lose.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71B70C192E405E0026812A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B71A192E405E0026812A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C71B6E2192E405D0026812A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B743192E42DC0026812A /* perlin.c in Sources */,
+				9CFC6B7A1938B75900C7D17F /* SKNode+SKTExtras.m in Sources */,
+				9CD58A4E19321D95003C792F /* SKSpriteNode+DebugDraw.m in Sources */,
+				9C71B705192E405D0026812A /* MyScene.m in Sources */,
+				9CFC6B7C1938B75900C7D17F /* SKTUtils.mm in Sources */,
+				9CFC6B781938B75900C7D17F /* SKAction+SKTExtras.m in Sources */,
+				9C71B702192E405D0026812A /* ViewController.m in Sources */,
+				9C71B6FC192E405D0026812A /* AppDelegate.m in Sources */,
+				9CFC6B791938B75900C7D17F /* SKEmitterNode+SKTExtras.m in Sources */,
+				9C996224195DA0D700BFB387 /* OldTVNode.m in Sources */,
+				9C71B6F8192E405D0026812A /* main.m in Sources */,
+				9CFC6B7B1938B75900C7D17F /* SKTAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71B70A192E405E0026812A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71B71C192E405E0026812A /* CatNapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C71B714192E405E0026812A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C71B6E5192E405D0026812A /* CatNap */;
+			targetProxy = 9C71B713192E405E0026812A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C71B6F4192E405D0026812A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C71B6F5192E405D0026812A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C71B6FD192E405D0026812A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C71B6FE192E405D0026812A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C71B718192E405E0026812A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C71B719192E405E0026812A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C71B71D192E405E0026812A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C71B71E192E405E0026812A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C71B720192E405E0026812A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNap/CatNap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C71B721192E405E0026812A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNap/CatNap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C71B723192E405E0026812A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CatNap.app/CatNap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CatNapTests/CatNapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9C71B724192E405E0026812A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CatNap.app/CatNap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNapTests/CatNapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C71B6E1192E405D0026812A /* Build configuration list for PBXProject "CatNap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C71B71D192E405E0026812A /* Debug */,
+				9C71B71E192E405E0026812A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C71B71F192E405E0026812A /* Build configuration list for PBXNativeTarget "CatNap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C71B720192E405E0026812A /* Debug */,
+				9C71B721192E405E0026812A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C71B722192E405E0026812A /* Build configuration list for PBXNativeTarget "CatNapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C71B723192E405E0026812A /* Debug */,
+				9C71B724192E405E0026812A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C71B6DE192E405D0026812A /* Project object */;
+}

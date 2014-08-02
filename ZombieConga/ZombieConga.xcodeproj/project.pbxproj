@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0091511905D2450010D700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091501905D2450010D700 /* Foundation.framework */; };
+		9C0091531905D2450010D700 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091521905D2450010D700 /* CoreGraphics.framework */; };
+		9C0091551905D2450010D700 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091541905D2450010D700 /* UIKit.framework */; };
+		9C0091571905D2450010D700 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091561905D2450010D700 /* SpriteKit.framework */; };
+		9C00915D1905D2460010D700 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C00915B1905D2460010D700 /* InfoPlist.strings */; };
+		9C00915F1905D2460010D700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C00915E1905D2460010D700 /* main.m */; };
+		9C0091631905D2460010D700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0091621905D2460010D700 /* AppDelegate.m */; };
+		9C0091661905D2460010D700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091641905D2460010D700 /* Main.storyboard */; };
+		9C0091691905D2460010D700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0091681905D2460010D700 /* ViewController.m */; };
+		9C00916C1905D2460010D700 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C00916B1905D2460010D700 /* MyScene.m */; };
+		9C0091701905D2460010D700 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C00916F1905D2460010D700 /* Images.xcassets */; };
+		9C0091771905D2460010D700 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091761905D2460010D700 /* XCTest.framework */; };
+		9C0091781905D2460010D700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091501905D2450010D700 /* Foundation.framework */; };
+		9C0091791905D2460010D700 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0091541905D2450010D700 /* UIKit.framework */; };
+		9C0091811905D2460010D700 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C00917F1905D2460010D700 /* InfoPlist.strings */; };
+		9C0091831905D2460010D700 /* ZombieCongaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0091821905D2460010D700 /* ZombieCongaTests.m */; };
+		9C0091AB1905DF200010D700 /* background (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = 9C00918E1905DF200010D700 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */; };
+		9C0091AC1905DF200010D700 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C00918F1905DF200010D700 /* background.png */; };
+		9C0091AD1905DF200010D700 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091901905DF200010D700 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */; };
+		9C0091AE1905DF200010D700 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091911905DF200010D700 /* background@2x.png */; };
+		9C0091AF1905DF200010D700 /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091921905DF200010D700 /* MainMenu.png */; };
+		9C0091B01905DF200010D700 /* MainMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091931905DF200010D700 /* MainMenu@2x.png */; };
+		9C0091B11905DF200010D700 /* YouLose.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091941905DF200010D700 /* YouLose.png */; };
+		9C0091B21905DF200010D700 /* YouLose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091951905DF200010D700 /* YouLose@2x.png */; };
+		9C0091B31905DF200010D700 /* YouWin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091961905DF200010D700 /* YouWin.png */; };
+		9C0091B41905DF200010D700 /* YouWin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091971905DF200010D700 /* YouWin@2x.png */; };
+		9C0091B51905DF200010D700 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091991905DF200010D700 /* bgMusic.mp3 */; };
+		9C0091B61905DF200010D700 /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C00919A1905DF200010D700 /* hitCat.wav */; };
+		9C0091B71905DF200010D700 /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C00919B1905DF200010D700 /* hitCatLady.wav */; };
+		9C0091B81905DF200010D700 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C00919C1905DF200010D700 /* lose.wav */; };
+		9C0091B91905DF200010D700 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C00919D1905DF200010D700 /* win.wav */; };
+		9C0091BA1905DF200010D700 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C00919F1905DF200010D700 /* cat.png */; };
+		9C0091BB1905DF200010D700 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A01905DF200010D700 /* cat@2x.png */; };
+		9C0091BC1905DF200010D700 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A11905DF200010D700 /* enemy.png */; };
+		9C0091BD1905DF200010D700 /* enemy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A21905DF200010D700 /* enemy@2x.png */; };
+		9C0091BE1905DF200010D700 /* zombie1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A31905DF200010D700 /* zombie1.png */; };
+		9C0091BF1905DF200010D700 /* zombie1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A41905DF200010D700 /* zombie1@2x.png */; };
+		9C0091C01905DF200010D700 /* zombie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A51905DF200010D700 /* zombie2.png */; };
+		9C0091C11905DF200010D700 /* zombie2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A61905DF200010D700 /* zombie2@2x.png */; };
+		9C0091C21905DF200010D700 /* zombie3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A71905DF200010D700 /* zombie3.png */; };
+		9C0091C31905DF200010D700 /* zombie3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A81905DF200010D700 /* zombie3@2x.png */; };
+		9C0091C41905DF200010D700 /* zombie4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091A91905DF200010D700 /* zombie4.png */; };
+		9C0091C51905DF200010D700 /* zombie4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0091AA1905DF200010D700 /* zombie4@2x.png */; };
+		9C1DB5E7190D4D1C00FA9676 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1DB5E6190D4D1C00FA9676 /* GameOverScene.m */; };
+		9CC2B0B6190FDFEA0033CD9D /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2B0B5190FDFEA0033CD9D /* MainMenuScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C00917A1905D2460010D700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0091451905D2450010D700 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C00914C1905D2450010D700;
+			remoteInfo = ZombieConga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C00914D1905D2450010D700 /* ZombieConga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieConga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0091501905D2450010D700 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C0091521905D2450010D700 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C0091541905D2450010D700 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C0091561905D2450010D700 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9C00915A1905D2460010D700 /* ZombieConga-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZombieConga-Info.plist"; sourceTree = "<group>"; };
+		9C00915C1905D2460010D700 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C00915E1905D2460010D700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C0091601905D2460010D700 /* ZombieConga-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZombieConga-Prefix.pch"; sourceTree = "<group>"; };
+		9C0091611905D2460010D700 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C0091621905D2460010D700 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C0091651905D2460010D700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C0091671905D2460010D700 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C0091681905D2460010D700 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C00916A1905D2460010D700 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		9C00916B1905D2460010D700 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		9C00916F1905D2460010D700 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C0091751905D2460010D700 /* ZombieCongaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieCongaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0091761905D2460010D700 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C00917E1905D2460010D700 /* ZombieCongaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZombieCongaTests-Info.plist"; sourceTree = "<group>"; };
+		9C0091801905D2460010D700 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C0091821905D2460010D700 /* ZombieCongaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZombieCongaTests.m; sourceTree = "<group>"; };
+		9C00918E1905DF200010D700 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
+		9C00918F1905DF200010D700 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9C0091901905DF200010D700 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
+		9C0091911905DF200010D700 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		9C0091921905DF200010D700 /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenu.png; sourceTree = "<group>"; };
+		9C0091931905DF200010D700 /* MainMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainMenu@2x.png"; sourceTree = "<group>"; };
+		9C0091941905DF200010D700 /* YouLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLose.png; sourceTree = "<group>"; };
+		9C0091951905DF200010D700 /* YouLose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouLose@2x.png"; sourceTree = "<group>"; };
+		9C0091961905DF200010D700 /* YouWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouWin.png; sourceTree = "<group>"; };
+		9C0091971905DF200010D700 /* YouWin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouWin@2x.png"; sourceTree = "<group>"; };
+		9C0091991905DF200010D700 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		9C00919A1905DF200010D700 /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
+		9C00919B1905DF200010D700 /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
+		9C00919C1905DF200010D700 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		9C00919D1905DF200010D700 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		9C00919F1905DF200010D700 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		9C0091A01905DF200010D700 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		9C0091A11905DF200010D700 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		9C0091A21905DF200010D700 /* enemy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enemy@2x.png"; sourceTree = "<group>"; };
+		9C0091A31905DF200010D700 /* zombie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie1.png; sourceTree = "<group>"; };
+		9C0091A41905DF200010D700 /* zombie1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie1@2x.png"; sourceTree = "<group>"; };
+		9C0091A51905DF200010D700 /* zombie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie2.png; sourceTree = "<group>"; };
+		9C0091A61905DF200010D700 /* zombie2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie2@2x.png"; sourceTree = "<group>"; };
+		9C0091A71905DF200010D700 /* zombie3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie3.png; sourceTree = "<group>"; };
+		9C0091A81905DF200010D700 /* zombie3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie3@2x.png"; sourceTree = "<group>"; };
+		9C0091A91905DF200010D700 /* zombie4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie4.png; sourceTree = "<group>"; };
+		9C0091AA1905DF200010D700 /* zombie4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie4@2x.png"; sourceTree = "<group>"; };
+		9C1DB5E5190D4D1C00FA9676 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		9C1DB5E6190D4D1C00FA9676 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		9CC2B0B4190FDFEA0033CD9D /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		9CC2B0B5190FDFEA0033CD9D /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C00914A1905D2450010D700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0091531905D2450010D700 /* CoreGraphics.framework in Frameworks */,
+				9C0091551905D2450010D700 /* UIKit.framework in Frameworks */,
+				9C0091571905D2450010D700 /* SpriteKit.framework in Frameworks */,
+				9C0091511905D2450010D700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C0091721905D2460010D700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0091771905D2460010D700 /* XCTest.framework in Frameworks */,
+				9C0091791905D2460010D700 /* UIKit.framework in Frameworks */,
+				9C0091781905D2460010D700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0091441905D2450010D700 = {
+			isa = PBXGroup;
+			children = (
+				9C0091581905D2450010D700 /* ZombieConga */,
+				9C00917C1905D2460010D700 /* ZombieCongaTests */,
+				9C00914F1905D2450010D700 /* Frameworks */,
+				9C00914E1905D2450010D700 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C00914E1905D2450010D700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C00914D1905D2450010D700 /* ZombieConga.app */,
+				9C0091751905D2460010D700 /* ZombieCongaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C00914F1905D2450010D700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0091501905D2450010D700 /* Foundation.framework */,
+				9C0091521905D2450010D700 /* CoreGraphics.framework */,
+				9C0091541905D2450010D700 /* UIKit.framework */,
+				9C0091561905D2450010D700 /* SpriteKit.framework */,
+				9C0091761905D2460010D700 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C0091581905D2450010D700 /* ZombieConga */ = {
+			isa = PBXGroup;
+			children = (
+				9C00918C1905DF200010D700 /* Art */,
+				9C0091611905D2460010D700 /* AppDelegate.h */,
+				9C0091621905D2460010D700 /* AppDelegate.m */,
+				9C0091641905D2460010D700 /* Main.storyboard */,
+				9C0091671905D2460010D700 /* ViewController.h */,
+				9C0091681905D2460010D700 /* ViewController.m */,
+				9C00916A1905D2460010D700 /* MyScene.h */,
+				9C00916B1905D2460010D700 /* MyScene.m */,
+				9CC2B0B4190FDFEA0033CD9D /* MainMenuScene.h */,
+				9CC2B0B5190FDFEA0033CD9D /* MainMenuScene.m */,
+				9C1DB5E5190D4D1C00FA9676 /* GameOverScene.h */,
+				9C1DB5E6190D4D1C00FA9676 /* GameOverScene.m */,
+				9C00916F1905D2460010D700 /* Images.xcassets */,
+				9C0091591905D2460010D700 /* Supporting Files */,
+			);
+			path = ZombieConga;
+			sourceTree = "<group>";
+		};
+		9C0091591905D2460010D700 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C00915A1905D2460010D700 /* ZombieConga-Info.plist */,
+				9C00915B1905D2460010D700 /* InfoPlist.strings */,
+				9C00915E1905D2460010D700 /* main.m */,
+				9C0091601905D2460010D700 /* ZombieConga-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C00917C1905D2460010D700 /* ZombieCongaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C0091821905D2460010D700 /* ZombieCongaTests.m */,
+				9C00917D1905D2460010D700 /* Supporting Files */,
+			);
+			path = ZombieCongaTests;
+			sourceTree = "<group>";
+		};
+		9C00917D1905D2460010D700 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C00917E1905D2460010D700 /* ZombieCongaTests-Info.plist */,
+				9C00917F1905D2460010D700 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C00918C1905DF200010D700 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				9C00918D1905DF200010D700 /* Backgrounds */,
+				9C0091981905DF200010D700 /* Sounds */,
+				9C00919E1905DF200010D700 /* sprites */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		9C00918D1905DF200010D700 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C00918E1905DF200010D700 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */,
+				9C00918F1905DF200010D700 /* background.png */,
+				9C0091901905DF200010D700 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */,
+				9C0091911905DF200010D700 /* background@2x.png */,
+				9C0091921905DF200010D700 /* MainMenu.png */,
+				9C0091931905DF200010D700 /* MainMenu@2x.png */,
+				9C0091941905DF200010D700 /* YouLose.png */,
+				9C0091951905DF200010D700 /* YouLose@2x.png */,
+				9C0091961905DF200010D700 /* YouWin.png */,
+				9C0091971905DF200010D700 /* YouWin@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		9C0091981905DF200010D700 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C0091991905DF200010D700 /* bgMusic.mp3 */,
+				9C00919A1905DF200010D700 /* hitCat.wav */,
+				9C00919B1905DF200010D700 /* hitCatLady.wav */,
+				9C00919C1905DF200010D700 /* lose.wav */,
+				9C00919D1905DF200010D700 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9C00919E1905DF200010D700 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				9C00919F1905DF200010D700 /* cat.png */,
+				9C0091A01905DF200010D700 /* cat@2x.png */,
+				9C0091A11905DF200010D700 /* enemy.png */,
+				9C0091A21905DF200010D700 /* enemy@2x.png */,
+				9C0091A31905DF200010D700 /* zombie1.png */,
+				9C0091A41905DF200010D700 /* zombie1@2x.png */,
+				9C0091A51905DF200010D700 /* zombie2.png */,
+				9C0091A61905DF200010D700 /* zombie2@2x.png */,
+				9C0091A71905DF200010D700 /* zombie3.png */,
+				9C0091A81905DF200010D700 /* zombie3@2x.png */,
+				9C0091A91905DF200010D700 /* zombie4.png */,
+				9C0091AA1905DF200010D700 /* zombie4@2x.png */,
+			);
+			path = sprites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C00914C1905D2450010D700 /* ZombieConga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C0091861905D2460010D700 /* Build configuration list for PBXNativeTarget "ZombieConga" */;
+			buildPhases = (
+				9C0091491905D2450010D700 /* Sources */,
+				9C00914A1905D2450010D700 /* Frameworks */,
+				9C00914B1905D2450010D700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieConga;
+			productName = ZombieConga;
+			productReference = 9C00914D1905D2450010D700 /* ZombieConga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C0091741905D2460010D700 /* ZombieCongaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C0091891905D2460010D700 /* Build configuration list for PBXNativeTarget "ZombieCongaTests" */;
+			buildPhases = (
+				9C0091711905D2460010D700 /* Sources */,
+				9C0091721905D2460010D700 /* Frameworks */,
+				9C0091731905D2460010D700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C00917B1905D2460010D700 /* PBXTargetDependency */,
+			);
+			name = ZombieCongaTests;
+			productName = ZombieCongaTests;
+			productReference = 9C0091751905D2460010D700 /* ZombieCongaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C0091451905D2450010D700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marcelo de Aguiar Machado Júnior";
+				TargetAttributes = {
+					9C0091741905D2460010D700 = {
+						TestTargetID = 9C00914C1905D2450010D700;
+					};
+				};
+			};
+			buildConfigurationList = 9C0091481905D2450010D700 /* Build configuration list for PBXProject "ZombieConga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C0091441905D2450010D700;
+			productRefGroup = 9C00914E1905D2450010D700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C00914C1905D2450010D700 /* ZombieConga */,
+				9C0091741905D2460010D700 /* ZombieCongaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C00914B1905D2450010D700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0091AB1905DF200010D700 /* background (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */,
+				9C0091AF1905DF200010D700 /* MainMenu.png in Resources */,
+				9C0091BC1905DF200010D700 /* enemy.png in Resources */,
+				9C0091B51905DF200010D700 /* bgMusic.mp3 in Resources */,
+				9C0091C51905DF200010D700 /* zombie4@2x.png in Resources */,
+				9C0091B61905DF200010D700 /* hitCat.wav in Resources */,
+				9C0091B01905DF200010D700 /* MainMenu@2x.png in Resources */,
+				9C0091AC1905DF200010D700 /* background.png in Resources */,
+				9C00915D1905D2460010D700 /* InfoPlist.strings in Resources */,
+				9C0091AD1905DF200010D700 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */,
+				9C0091B11905DF200010D700 /* YouLose.png in Resources */,
+				9C0091C01905DF200010D700 /* zombie2.png in Resources */,
+				9C0091B41905DF200010D700 /* YouWin@2x.png in Resources */,
+				9C0091BA1905DF200010D700 /* cat.png in Resources */,
+				9C0091B21905DF200010D700 /* YouLose@2x.png in Resources */,
+				9C0091C11905DF200010D700 /* zombie2@2x.png in Resources */,
+				9C0091BE1905DF200010D700 /* zombie1.png in Resources */,
+				9C0091C41905DF200010D700 /* zombie4.png in Resources */,
+				9C0091B31905DF200010D700 /* YouWin.png in Resources */,
+				9C0091B91905DF200010D700 /* win.wav in Resources */,
+				9C0091701905D2460010D700 /* Images.xcassets in Resources */,
+				9C0091BF1905DF200010D700 /* zombie1@2x.png in Resources */,
+				9C0091BB1905DF200010D700 /* cat@2x.png in Resources */,
+				9C0091AE1905DF200010D700 /* background@2x.png in Resources */,
+				9C0091C31905DF200010D700 /* zombie3@2x.png in Resources */,
+				9C0091B81905DF200010D700 /* lose.wav in Resources */,
+				9C0091661905D2460010D700 /* Main.storyboard in Resources */,
+				9C0091B71905DF200010D700 /* hitCatLady.wav in Resources */,
+				9C0091BD1905DF200010D700 /* enemy@2x.png in Resources */,
+				9C0091C21905DF200010D700 /* zombie3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C0091731905D2460010D700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0091811905D2460010D700 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C0091491905D2450010D700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1DB5E7190D4D1C00FA9676 /* GameOverScene.m in Sources */,
+				9C00916C1905D2460010D700 /* MyScene.m in Sources */,
+				9C0091691905D2460010D700 /* ViewController.m in Sources */,
+				9C0091631905D2460010D700 /* AppDelegate.m in Sources */,
+				9CC2B0B6190FDFEA0033CD9D /* MainMenuScene.m in Sources */,
+				9C00915F1905D2460010D700 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C0091711905D2460010D700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0091831905D2460010D700 /* ZombieCongaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C00917B1905D2460010D700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C00914C1905D2450010D700 /* ZombieConga */;
+			targetProxy = 9C00917A1905D2460010D700 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C00915B1905D2460010D700 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C00915C1905D2460010D700 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C0091641905D2460010D700 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C0091651905D2460010D700 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C00917F1905D2460010D700 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C0091801905D2460010D700 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C0091841905D2460010D700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C0091851905D2460010D700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C0091871905D2460010D700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZombieConga/ZombieConga-Prefix.pch";
+				INFOPLIST_FILE = "ZombieConga/ZombieConga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C0091881905D2460010D700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZombieConga/ZombieConga-Prefix.pch";
+				INFOPLIST_FILE = "ZombieConga/ZombieConga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C00918A1905D2460010D700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZombieConga.app/ZombieConga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZombieConga/ZombieConga-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZombieCongaTests/ZombieCongaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9C00918B1905D2460010D700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZombieConga.app/ZombieConga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZombieConga/ZombieConga-Prefix.pch";
+				INFOPLIST_FILE = "ZombieCongaTests/ZombieCongaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C0091481905D2450010D700 /* Build configuration list for PBXProject "ZombieConga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0091841905D2460010D700 /* Debug */,
+				9C0091851905D2460010D700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C0091861905D2460010D700 /* Build configuration list for PBXNativeTarget "ZombieConga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0091871905D2460010D700 /* Debug */,
+				9C0091881905D2460010D700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C0091891905D2460010D700 /* Build configuration list for PBXNativeTarget "ZombieCongaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C00918A1905D2460010D700 /* Debug */,
+				9C00918B1905D2460010D700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C0091451905D2450010D700 /* Project object */;
+}
